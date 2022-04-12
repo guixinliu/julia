@@ -146,6 +146,10 @@ or if it must have a value, set it to the string `:`.
 
     On Windows, path elements are separated by the `;` character, as is the case with
     most path lists on Windows. Replace `:` with `;` in the above paragraph.
+    
+!!! note
+    `JULIA_DEPOT_PATH` must be defined before starting julia; defining it in
+    `startup.jl` is too late in the startup process.
 
 ### `JULIA_HISTORY`
 
